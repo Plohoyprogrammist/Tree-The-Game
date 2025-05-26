@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class ColliderOfTriger : MonoBehaviour
 {
-    void Update()
+    private void OnTriggerEnter(Collider other)
     {
-        transform.rotation = Quaternion.Euler(0f, transform.rotation.y, 0f);
+        Debug.Log("Есть хуй");
     }
 }
