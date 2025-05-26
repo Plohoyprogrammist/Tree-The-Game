@@ -21,7 +21,7 @@ public class ManagerText : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             index++;
-            if (index > Texts.Count)
+            if (index > Texts.Count - 1)
             {
                 images.gameObject.SetActive(false);
                 index = 0;
