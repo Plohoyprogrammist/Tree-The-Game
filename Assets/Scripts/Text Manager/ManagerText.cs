@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using System.Runtime.CompilerServices;
+using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -60,6 +60,7 @@ public class ManagerText : MonoBehaviour
             }
         }
         textUi.text = null;
-        images.gameObject.SetActive(true);
+        images.gameObject.SetActive(false);
+        Debug.Log("Zalupa");
     }
 }

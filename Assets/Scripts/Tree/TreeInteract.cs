@@ -1,23 +1,23 @@
-using Unity.Burst.CompilerServices;
+using System.Collections.Generic;
+using System.Collections;
 using UnityEngine;
 
 public class TreeInteract : MonoBehaviour, IInteractable
 {
     public string nameObject;
+    public int[] dialogIndex;
 
-    void Start()
+    public ManagerText managerText;
+
+    private void Start()
     {
-
-    }
-
-    void Update()
-    {
-
+        managerText = GetComponent<ManagerText>();
     }
 
     public void Interact()
     {
-        
+        Debug.Log("ZalupaVerbluda");
+        managerText.Dialoge(dialogIndex);
     }
 
     public string GetName()
