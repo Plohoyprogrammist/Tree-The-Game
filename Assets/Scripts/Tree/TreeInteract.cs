@@ -1,16 +1,27 @@
+using Unity.Burst.CompilerServices;
 using UnityEngine;
 
-public class TreeInteract : MonoBehaviour
+public class TreeInteract : MonoBehaviour, IInteractable
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public string nameObject;
+
     void Start()
+    {
+
+    }
+
+    void Update()
+    {
+
+    }
+
+    public void Interact()
     {
         
     }
 
-    // Update is called once per frame
-    void Update()
+    public string GetName()
     {
-        
+        return nameObject;
     }
 }
