@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ColliderOfTriger : MonoBehaviour
 {
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         Debug.Log("Есть хуй");
         if (Input.GetMouseButtonDown(0))
